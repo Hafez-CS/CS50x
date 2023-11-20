@@ -1,1 +1,1 @@
-# this is My code in cs50x
+# This is My code in cs50x
