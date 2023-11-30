@@ -1,0 +1,1 @@
+SELECT birth FROM people WHERE name == "Emma Stone" -- find a year of birthday emma stone
