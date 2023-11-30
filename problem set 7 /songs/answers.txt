@@ -1,0 +1,8 @@
+1.sql : we find the name from filename
+2.sql : we find the name order by rempo position
+3.sql : the 5 longest songs in the duration_ms from name
+4.sql : find the song with these model danceability > 0.75 , energy > 0.75 , valence > 0.75
+5.sql : the average of the energy from the name in the all songs
+6.sql : find the songs from post malone in the name from songs
+7.sql : the average from drake songs ih the name
+8.sql : find the feat from songs in the all
