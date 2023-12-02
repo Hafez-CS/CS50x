@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function(event) {
+                    correct.style.backgroundColor = 'green'; // when user click this , show the green(correct answer)
+                    document.querySelector('#feedback1').innerHTML = 'Correct!';
+                });
+
+
+
+                let Incorrects = document.querySelectorAll('.Incorrect');
+                for (let i = 0; i < Incorrects.length; i++) {
+                    Incorrects[i].addEventListener('click', function(event) {
+                        Incorrects[i].style.backgroundColor = 'red'; // when user click this , show the red(incorrect answer)
+                        document.querySelector('#feedback1').innerHTML = 'Incorrect';
+                    });
+                }
+
+
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    if (input.value == 'Albert Einstein') { // check if user dont do this , show the red calss or green class
+                        input.style.backgroundColor = 'green'; // the green class
+                        document.querySelector('#feedback2').innerHTML = 'Correct!';
+                    } else {
+                        input.style.backgroundColor = 'red'; // the red class
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect';
+                    }
+                });
+
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>wich one is better?</h3>
+                <button class="Incorrect">math</button>
+                <button class="correct">physics</button> <!-- the correct answer is physics -->
+                <button class="Incorrect">chemistry</button>
+                <button class="Incorrect">medical</button>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>Which scientists ar genius?</h3>
+                <input type='text'></input>
+                <button id="check">Check Answer</button> <!-- the id for check the answer in Javascript code -->
+
+            </div>
+        </div>
+    </body>
+
+</html>
