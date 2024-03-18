@@ -27,3 +27,5 @@ Week 8 = HTML, CSS, JavaScript
 Week 9 = Flask
 
 Week 10 = Emoji
+
+![Monty Python](https://prod-discovery.edx-cdn.org/media/course/image/da1b2400-322b-459b-97b0-0c557f05d017-a3d1899c3344.small.png)
